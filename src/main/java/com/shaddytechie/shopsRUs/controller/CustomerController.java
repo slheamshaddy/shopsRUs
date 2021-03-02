@@ -19,6 +19,11 @@ import com.shaddytechie.shopsRUs.model.Customer;
 import com.shaddytechie.shopsRUs.model.Response;
 import com.shaddytechie.shopsRUs.service.CustomerService;
 
+//NOTE ----
+
+//BASE URL = http://shopsrus-env.eba-t5bdxpvn.us-east-2.elasticbeanstalk.com/
+
+
 @RestController
 @RequestMapping("/customer")
 public class CustomerController {
