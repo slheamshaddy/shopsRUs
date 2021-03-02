@@ -1,0 +1,39 @@
+Table 1-  Table Name:  customer
+
+Schema:testdb
++--------------+--------------+------+-----+---------+----------------+
+| Field        | Type         | Null | Key | Default | Extra          |
++--------------+--------------+------+-----+---------+----------------+
+| id           | int          | NO   | PRI | NULL    | auto_increment |
+| name         | varchar(200) | YES  |     | NULL    |                |
+| date_Created | varchar(50)  | YES  |     | NULL    |                |
+| type         | varchar(50)  | YES  |     | NULL    |                |
+| email        | varchar(50)  | YES  |     | NULL    |                |
+| customer_Id  | varchar(100) | YES  |     | NULL    |                |
+
++--------------+--------------+------+-----+---------+----------------+
+
+Table 2- Table name:   discount
+Schema: testdb
+
++------------+-------------+------+-----+---------+----------------+
+| Field      | Type        | Null | Key | Default | Extra          |
++------------+-------------+------+-----+---------+----------------+
+| id         | int         | NO   | PRI | NULL    | auto_increment |
+| percentage | int         | YES  |     | NULL    |                |
+| type       | varchar(50) | YES  |     | NULL    |                |
++------------+-------------+------+-----+---------+----------------+
+
+Table 3:  invoice;
+
++----------------+--------------+------+-----+---------+----------------+
+| Field          | Type         | Null | Key | Default | Extra          |
++----------------+--------------+------+-----+---------+----------------+
+| id             | int          | NO   | PRI | NULL    | auto_increment |
+| amount         | double       | YES  |     | NULL    |                |
+| transaction_Id | varchar(100) | YES  |     | NULL    |                |
+| purchase_Type  | varchar(50)  | YES  |     | NULL    |                |
+| total_Amount   | double       | YES  |     | NULL    |                |
+| customer_Id    | varchar(100) | YES  |     | NULL    |                |
++----------------+--------------+------+-----+---------+----------------+
+
